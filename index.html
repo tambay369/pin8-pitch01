@@ -9,7 +9,7 @@
     
     body { 
       font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; 
-      max-width: 900px; 
+      max-width: 1000px; 
       margin: 0 auto; 
       padding: 40px 20px; 
       background: #000000; 
@@ -41,13 +41,16 @@
       margin-bottom: 40px;
     }
     
-    h3 { 
+    .section-title { 
       color: #ffd700; 
       font-weight: 400; 
-      letter-spacing: 2px;
-      font-size: 1em;
+      letter-spacing: 4px;
+      font-size: 1.3em;
       text-transform: uppercase;
-      margin: 30px 0 15px 0;
+      margin: 50px 0 25px 0;
+      text-align: center;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 15px;
     }
     
     .tagline { 
@@ -73,7 +76,7 @@
     
     .features { 
       display: grid; 
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
       gap: 25px; 
       margin: 40px 0; 
     }
@@ -88,12 +91,14 @@
     .feature:hover {
       border-color: #ffd700;
       transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
     }
     
     .feature h3 { 
       color: #ffffff; 
       margin-top: 0; 
       font-size: 1.1em;
+      letter-spacing: 1px;
     }
     
     .feature p { 
@@ -119,6 +124,7 @@
       border: 2px solid #ffd700;
       background: #0a0a0a;
       padding: 30px;
+      margin: 40px 0;
     }
     
     .capital-box .amount {
@@ -195,39 +201,59 @@
   <h1>PIN8 PRIME SPINE SYSTEM</h1>
   <h2>PREMIUM BUSINESS MANAGEMENT</h2>
   
-  <!-- PHASE 1 ROADMAP -->
-  <h3>📋 PHASE 1: FOUNDATION</h3>
+  <!-- FOUNDATION -->
+  <div class="section-title">🏗️ FOUNDATION: CORE SYSTEMS</div>
   <div class="features">
     <div class="feature">
-      <h3>1a • CORE SYSTEM</h3>
-      <p>Database architecture, security framework, authentication system, sovereignty guards</p>
+      <h3>📦 PREMIUM INVENTORY SYSTEM</h3>
+      <p>Real-time stock tracking, automated valuations, multi-location management, barcode/QR integration, low-stock alerts</p>
     </div>
     <div class="feature">
-      <h3>1b • MODULES</h3>
-      <p>Inventory, HR Management, Point of Sales - fully integrated and tested</p>
+      <h3>👥 PREMIUM HUMAN RESOURCE SYSTEM</h3>
+      <p>Employee database, payroll processing, attendance tracking, department organization, performance analytics</p>
     </div>
     <div class="feature">
-      <h3>1c • DEPLOYMENT</h3>
-      <p>Legal compliance, marketing materials, beta testing, scaling infrastructure</p>
+      <h3>💰 PREMIUM POINT OF SALES</h3>
+      <p>Multi-payment processing, receipt generation, sales analytics, customer tracking, inventory integration</p>
     </div>
   </div>
   
+  <!-- GROWTH -->
+  <div class="section-title">📈 GROWTH: SUPPLY CHAIN MANAGEMENT</div>
   <div class="features">
     <div class="feature">
-      <h3>📦 INVENTORY</h3>
-      <p>Track products, stock levels, and valuations in real-time with precision control</p>
+      <h3>🚚 INNOVATIVE DELIVERY LOGISTICS SYSTEM</h3>
+      <p>Route optimization, real-time tracking, fleet management, delivery scheduling, proof of delivery</p>
     </div>
     <div class="feature">
-      <h3>👥 HR MANAGEMENT</h3>
-      <p>Employee database, payroll processing, and department organization simplified</p>
+      <h3>🤝 INNOVATIVE SUPPLIERS MANAGEMENT SYSTEM</h3>
+      <p>Vendor database, procurement automation, contract management, performance scoring, payment tracking</p>
     </div>
     <div class="feature">
-      <h3>💰 POINT OF SALES</h3>
-      <p>Process transactions, generate receipts, and track revenue streams effortlessly</p>
+      <h3>🏭 INNOVATIVE WAREHOUSE MANAGEMENT SYSTEM</h3>
+      <p>Bin location tracking, pick/pack optimization, stock rotation, multi-warehouse sync, audit trails</p>
     </div>
   </div>
   
-  <h3>🎯 Live Demo Preview</h3>
+  <!-- SUSTAINABILITY -->
+  <div class="section-title">🌱 SUSTAINABILITY: CUSTOMER RELATIONSHIP</div>
+  <div class="features">
+    <div class="feature">
+      <h3>💎 CUSTOMER RELATIONSHIP & RETENTION SYSTEM</h3>
+      <p>Customer profiles, purchase history, loyalty programs, automated follow-ups, satisfaction tracking</p>
+    </div>
+    <div class="feature">
+      <h3>🔍 TRACK & TRACE SYSTEM</h3>
+      <p>End-to-end product tracing, batch/lot tracking, expiry management, recall readiness, compliance reporting</p>
+    </div>
+    <div class="feature">
+      <h3>📊 ANALYTICS & INSIGHTS DASHBOARD</h3>
+      <p>Real-time KPIs, predictive analytics, trend forecasting, custom reports, executive summaries</p>
+    </div>
+  </div>
+  
+  <!-- LIVE DEMO -->
+  <h3 style="text-align: center; margin-top: 50px;">🎯 Live Demo Preview</h3>
   <div class="demo-box">
     <p>> inventory</p>
     <p>> add Laptop Electronics 10 999.99</p>
@@ -236,7 +262,8 @@
     <p>1|Laptop|Electronics|10|999.99</p>
   </div>
   
-  <h3>💼 Capital Deployment</h3>
+  <!-- CAPITAL DEPLOYMENT -->
+  <h3 style="text-align: center;">💼 Capital Deployment</h3>
   <div class="capital-box">
     <p class="amount">₱3.69M Capital Deployment</p>
     <p class="subtitle">PIN8 ECOSYSTEM: SPEEDRUN EXECUTION & PREPARATION</p>
@@ -244,10 +271,12 @@
     <p class="details"><strong>Model:</strong> Revenue Share • Sovereignty Guards</p>
   </div>
   
+  <!-- CTA -->
   <div class="cta">
     <button onclick="alert('Email: your-email@gmail.com')">📩 Request Private Demo</button>
   </div>
   
+  <!-- FOOTER -->
   <div class="footer">
     <p>© 2026 PIN8 Systems • All Rights Reserved</p>
     <p>Confidential • Proprietary • Sovereign</p>
